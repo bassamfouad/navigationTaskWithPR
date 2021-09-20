@@ -1,0 +1,10 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name = "TaskComponent" extends = "Task">
+    <interface>
+        <field id = "contenturi" type = "uri" />
+        <field id = "content" type = "node" />
+        <field id="contentList" type="array" value="[]" />
+    </interface>
+    <script type="text/brightscript" uri="./taskComponent.brs" />
+</component>
+<!-- responsible for the api call and content management  -->

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="user" extends="Group">
+  <children >
+    <Poster 
+      id = "itemPoster" 
+      width = "512" 
+      height = "288" 
+      scaleRotateCenter = "[ 256.0, 144.0 ]">
+
+      <Rectangle 
+        id = "itemMask" 
+        color = "0x000000FF" 
+        opacity = "0.75" 
+        width = "512" 
+        height = "288" 
+        scaleRotateCenter = "[ 256.0, 144.0 ]"/>
+
+    </Poster>
+
+    <Label 
+      id = "itemLabel" 
+      translation = "[ 20, 264 ]" 
+      horizAlign = "right" 
+      width = "492" 
+      opacity = "0.0"/>
+
+    <Label 
+      text ="i am here"
+      id = "itemLabel2" 
+      translation = "[ 20, 264 ]" 
+      horizAlign = "left" 
+      width = "492" 
+      opacity = "0.0"/>
+
+  </children>
+  <interface >
+    <field id = "itemContent" type = "node" onChange = "showcontent"/>
+    <field id = "focusPercent" type = "float" onChange = "showfocus"/>
+    <field id = "rowFocusPercent" type = "float" onChange = "showrowfocus"/>
+    <field id="userList" type="node" />
+  </interface>
+  <script type="text/brightscript" uri="./user.brs" />
+</component>
