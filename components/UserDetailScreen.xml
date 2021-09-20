@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="UserDetailScreen" extends="Group">
+  <children>
+    <Rectangle id="userWrapper" color="0xA9A9A9">
+      <Poster id="userAvatar" />
+      <Label id="userEmail" text="" color="0x00000"/>
+    </Rectangle>
+  </children>
+  <interface>
+    <field id="isClicked" type="bool" value="false" alwaysNotify="true"/>
+    <field id="selectedUser" type="node" alwaysNotify="true"/>
+  </interface>
+  <script type="text/brightscript" uri="./UserDetailScreen.brs" />
+</component>

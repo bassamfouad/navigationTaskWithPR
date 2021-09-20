@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="Content" extends="ContentNode">
+    <interface>
+        <field id="email" type="string" />
+        <field id="fullName" type="string" />
+        <field id="avatar" type="string" />
+    </interface>
+</component>
